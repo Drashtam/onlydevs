@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation"; // ✅ Use next/navigation for App Router
+import { useRouter } from "next/navigation"; 
 
 export default function Login() {
-  const router = useRouter(); // ✅ Correct usage
+  const router = useRouter(); 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
