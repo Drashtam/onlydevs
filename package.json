@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "client",
+=======
+  "name": "inventory-system",
+>>>>>>> 1f11d9567050ca7d4274f1b7fe1923c05a6f5ae6
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,13 +15,21 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+<<<<<<< HEAD
     "next": "15.2.3"
+=======
+    "next": "15.2.2"
+>>>>>>> 1f11d9567050ca7d4274f1b7fe1923c05a6f5ae6
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "tailwindcss": "^4",
     "eslint": "^9",
+<<<<<<< HEAD
     "eslint-config-next": "15.2.3",
+=======
+    "eslint-config-next": "15.2.2",
+>>>>>>> 1f11d9567050ca7d4274f1b7fe1923c05a6f5ae6
     "@eslint/eslintrc": "^3"
   }
 }
