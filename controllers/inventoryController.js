@@ -1,7 +1,11 @@
-// controllers/inventoryController.js
-const Inventory = require("../models/Inventory");
+const Inventory = require("@/models/Inventory");
 
 exports.createItem = async (req, res) => {
+  const { name, quantity, price } = req.body;
+  if (!name || quantity == null || price == null) {
+    return res.status(400).json({ error: "Name, quantity, and price are required" });
+  }
+  
   try {
     const newItem = new Inventory(req.body);
     await newItem.save();
@@ -41,10 +45,14 @@ exports.updateItem = async (req, res) => {
 };
 
 exports.deleteItem = async (req, res) => {
+  const { _id } = req.params;
   try {
-    await Inventory.findByIdAndDelete(req.params.id);
-    res.json({ message: "Item deleted" });
+    const item = await Inventory.findById(_id);
+    if (!item) return res.status(404).json({ message: "Item not found" });
+
+    await Inventory.findByIdAndDelete(id);
+    res.json({ message: "Item deleted successfully" });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: "Error occurred while deleting the item: " + error.message });
   }
 };
