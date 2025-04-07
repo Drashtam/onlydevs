@@ -12,7 +12,7 @@ A web application built with Node.js, Express, and MongoDB.
   
 ![Image](https://github.com/user-attachments/assets/78cc43f6-d872-42d2-af5f-f031782270e7)
 
-#-Landing Page:
+-Landing Page:
 This Landing Page serves as the central hub for the IMS, providing access to all major
 features for users, including authentication and inventory management tasks. It prominently
 displays the Team OnlyDevs logo at the top, establishing our brand identity, and offers an
@@ -21,7 +21,7 @@ designed to guide users seamlessly into the system’s core functionalities.
 
 ![Login](https://github.com/user-attachments/assets/1c7dd2ba-df6a-4da3-9fcd-e6c73087123f)
 
-#- Login Section:
+- Login Section:
 This page allows users to securely access the IMS by entering their credentials. It is the entry
 point for all users, including admins and warehouse staff, ensuring that only authorized
 individuals can manage inventory data.
@@ -33,7 +33,7 @@ Key UI Elements: -
 
 ![Sign Up](https://github.com/user-attachments/assets/4a47fb0c-7588-4740-a795-849fecb895ca)
 
-#- Sign Up Section:
+- Sign Up Section:
 This page enables new users to register for the IMS by providing their details, creating an
 account for secure access. It supports the authentication functionality by allowing admins and
 warehouse staff to sign up before accessing inventory management features. The sign-up
@@ -47,7 +47,7 @@ Key UI Elements:
 
 ![Dashboard](https://github.com/user-attachments/assets/0f1fcb43-c1e0-4a18-a3b9-08dfd7dacaa4)
 
-#- Dashboard Overview:
+- Dashboard Overview:
 The Dashboard provides an overview of the inventory status for logged-in users. It displays
 key metrics and quick access to inventory management features, serving as the central hub
 for navigation.
@@ -61,7 +61,7 @@ Key UI Elements:
 
 ![Product](https://github.com/user-attachments/assets/e957a346-3b68-477e-b580-3bd46f66e040)
 
-#- Product Info Section:
+- Product Info Section:
 This page displays detailed information about a selected product in the IMS, supporting the
 Read operation in CRUD. It allows users, such as admins and warehouse staff, to view
 specific product details like price, SKU, and quantity, facilitating inventory oversight and
@@ -76,7 +76,7 @@ Key UI Elements:
 
 ![AddProduct](https://github.com/user-attachments/assets/c17a5ead-cdc3-4250-a955-59dc756a7db3)
 
-#- Add Product Form:
+- Add Product Form:
 This page enables users to add new products to the inventory, supporting the Create operation
 in CRUD. Users can input product details, which are then saved to the MongoDB database.
 Key UI Elements:
@@ -84,11 +84,6 @@ Key UI Elements:
 - Quantity field: For specifying the stock quantity.
 - Category dropdown: For selecting the product category.
 - Submit button: Adds the product to the inventory.
-
-
-
-
-
 
 ## Getting Started
 
