@@ -37,17 +37,16 @@ A full-stack inventory management system built with **React**, **Node.js (Expres
 ---
 
 ## 📁 Project Structure
-inventory-management-system/
-├── client/                # Frontend (React)
-│   ├── components/
-│   └── app/
-│
-├── server/                # Backend (Express)
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   └── middleware/
-│
+inventory-management-system
+├── client
+│   ├── app
+│   └── components
+├── server
+│   ├── controllers
+│   ├── middleware
+│   ├── models
+│   └── routes
+├── .gitignore
 └── README.md
 
 ---
