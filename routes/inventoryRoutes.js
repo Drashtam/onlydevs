@@ -1,6 +1,7 @@
 const express = require("express");
 const authMiddleware = require("../middleware/authMiddleware");
 const Inventory = require("../models/inventory"); // ✅ Import Inventory Model
+const inventoryController = require("../controllers/inventoryController"); // Import controller
 const router = express.Router();
 
 // ✅ Add Inventory Item (Protected)
@@ -16,7 +17,6 @@ router.post("/", authMiddleware, async (req, res) => {
       name,
       quantity,
       price,
-      user: req.user.id, // Assign user ID from token
     });
 
     await newItem.save();
@@ -39,7 +39,7 @@ router.get("/", authMiddleware, async (req, res) => {
 });
 
 // Get a specific item by ID
-router.get("/:id", async (req, res) => {
+router.get("/:id", authMiddleware, async (req, res) => {
   try {
     const item = await Inventory.findById(req.params.id);
     if (!item) {
@@ -50,7 +50,7 @@ router.get("/:id", async (req, res) => {
     res.status(500).json({ error: "Error retrieving the item: " + error.message });
   }
 });
-
+router.get('/total-cost', inventoryController.getTotalInventoryCost); // Use controller for total cost
 // ✅ Update Inventory Item (Protected)
 router.put("/:id", authMiddleware, async (req, res) => {
   try {
