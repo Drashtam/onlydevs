@@ -1,99 +1,96 @@
-# 📦 Inventory Management System
+# OnlyDevs 👩‍💻👨‍💻
+![Build](https://img.shields.io/badge/build-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+A modern full-stack platform built for developers, by developers. OnlyDevs is a developer-centric hub where users can share projects, collaborate on code, and showcase their skills.
 
-A full-stack inventory management system built with **React**, **Node.js (Express)**, and **MongoDB**. This application allows users to manage inventory items, track stock levels, compute total cost, and receive low stock alerts.
 
----
+🔗 [Live Demo](https://onlydevs.vercel.app)
+
 
 ## 🚀 Features
 
-- 🔐 User authentication (JWT-based)
-- 📋 CRUD operations for inventory items
-- 📷 Image upload functionality
-- 📊 Total inventory cost and stock summary
-- ⚠️ Low stock alerts for items under threshold
-- 🌐 Responsive dashboard with sidebar navigation
+- 🧑‍💻 Developer profile creation
+- 🛠️ Project showcase
+- 💬 Community-based collaboration
+- 🔒 Secure authentication & user management
+- 📦 RESTful API integration
 
----
+## 📂 Project Structure
+<pre>
+onlydevs/
+├── client/               # Frontend (Next.js with Tailwind & ShadCN)
+│   ├── app/              # Pages and route handlers
+│   ├── components/       # Reusable UI components
+│   ├── public/           # Static assets
+│   └── tailwind.config.js
+│
+├── controllers/          # Express route handlers (API logic)
+├── middleware/           # Auth and error middleware
+├── models/               # Mongoose schemas for MongoDB
+├── routes/               # API routes
+├── utils/                # Utility functions/helpers
+├── .env                  # Environment variables (should not be committed)
+├── .gitignore            # Files/folders to ignore in Git
+├── package.json          # Backend dependencies and scripts
+├── server.js             # Backend entry point
+└── README.md             # Project documentation
+</pre>
 
-## 🛠 Tech Stack
+## 🏗️ Tech Stack
 
-**Frontend:**
-- React
+**Frontend**:		
+- React / Next.js
 - Tailwind CSS
+- ShadCN UI
 - Axios
 
-**Backend:**
-- Node.js
-- Express.js
-- MongoDB + Mongoose
+**Backend**:
+- Node.js / Express
+- MongoDB / Mongoose
+- JWT Authentication
+- Multer (for file/image uploads)
 
-**Other:**
-- Multer (for image upload)
-- JWT for authentication
-- dotenv for environment configs
 
----
-
----
-
-## 📁 Project Structure
-inventory-management-system
-├── client
-│   ├── app
-│   └── components
-├── server
-│   ├── controllers
-│   ├── middleware
-│   ├── models
-│   └── routes
-├── .gitignore
-└── README.md
-
----
-
-## ⚙️ Setup Instructions
-
-### 1. Clone the repo
+## 🛠️ Setup & Run
 
 ```bash
+# 1. Clone the repo
 git clone https://github.com/Drashtam/onlydevs.git
-cd inventory-management-system
+cd onlydevs
 
-2. Set up the backend
-  node server.js
+# 2. Install server dependencies
+npm install
 
-3. Setup the frontend
- npm run dev
-    or
- npm start/ yarn build
+# 3. Go into the client and install frontend dependencies
+cd client
+npm install
 
+# 4. Start both client and server (use concurrently if set up)
+# Option 1: Separate terminals
+npm run dev      # inside client/
+node server.js   # inside root/
 
+# Option 2: If you've set up concurrently
+npm run start:all🌐 Deployment
+	•	Frontend: Vercel
+	•	Backend: Render or Railway
 
-2. Set up the backend
-Method     Route                       Description
-GET        /api/inventory              Get all inventory items
-POST       /api/inventory              Add new inventory item
-PUT        /api/inventory/:id          Update inventory item
-DELETE     /api/inventory/:id          Delete inventory item
-GET         /api/inventory/total-cost  Get total cost of inventory
+🧠 Future Enhancements
+	•	Real-time chat (Socket.IO)
+	•	Notifications
+	•	Role-based access control
+	•	Dark mode toggle
 
-🙋‍♂️ Author
-OnlyDevs Team
+📸 
+Add some cool UI shots here later
+
+🙌 Contributing
+
+PRs are welcome! Open an issue for discussion before making major changes.
+
+⸻
 
 📄 License
 
 This project is licensed under the MIT License.
-
-📝 To-Do
-	•	Add pagination & filtering
-	•	Implement user roles (admin/user)
-	•	Export inventory reports as PDF/CSV
-
 ---
-
-Let me know if you'd like to include:
-- Deployment instructions (e.g., for Vercel/Render)
-- Screenshot images
-- Contribution guidelines
-
-I can customize this more for your exact structure if needed.
