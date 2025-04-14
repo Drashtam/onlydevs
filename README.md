@@ -83,7 +83,15 @@ npm run start:all🌐 Deployment
 
 📸 
 Add some cool UI shots here later
+👥 Contributors
 
+Thanks to all the awesome contributors who made this project possible 💻❤️
+	•	@parthk1611
+	•	@Drashtam
+	•	@Alim-Ra
+	•	@Zeel7530
+	•	@11amcoder
+	•	@del1655
 🙌 Contributing
 
 PRs are welcome! Open an issue for discussion before making major changes.
