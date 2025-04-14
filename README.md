@@ -69,6 +69,7 @@ npm install
 # Option 1: Separate terminals
 npm run dev      # inside client/
 node server.js   # inside root/
+```
 
 # Option 2: If you've set up concurrently
 npm run start:all🌐 Deployment
@@ -83,18 +84,21 @@ npm run start:all🌐 Deployment
 
 📸 
 Add some cool UI shots here later
+
 👥 Contributors
 
-Thanks to all the awesome contributors who made this project possible 💻❤️
+Thanks to all the awesome contributors who made this project possible 💻✨
 	•	@parthk1611
 	•	@Drashtam
 	•	@Alim-Ra
 	•	@Zeel7530
 	•	@11amcoder
 	•	@del1655
+
 🙌 Contributing
 
 PRs are welcome! Open an issue for discussion before making major changes.
+
 
 ⸻
 
